@@ -4,6 +4,7 @@ A subsequence is a sequence that can be derived from another sequence by deletin
 
 ### Note : Subsequence doesn't need to be contiguous.
 
+## Solution
 We can solve this problem either recursively or by using Dynamic Programming. The recursive approach solves the same subproblem everytime, we can improve the runtime by using the Dynamic Programming approach.
 
 #### Recursive Approach
