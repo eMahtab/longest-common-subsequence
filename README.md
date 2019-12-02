@@ -4,18 +4,20 @@ A subsequence is a sequence that can be derived from another sequence by deletin
 
 ### Note : Subsequence doesn't need to be contiguous.
 
-### Approach
+We can solve this problem either recursively or by using Dynamic Programming. The recursive approach solves the same subproblem everytime, we can improve the runtime by using the Dynamic Programming approach.
 
-#### Recursive
+#### Recursive Approach
 
 ##### Base case
 If any one of the string is empty then longest common subsequence will be of length 0. 
 e.g. "" and "abc" the longest common substring will be of length 0, because there is nothing common, between these two strings. 
 
-If str1[i] == str2[j], then move to next character for both the strings.
 ```java
 1 + longestCommonSubsequence(text1.substring(1), text2.substring(1))
 ```
+
+If str1[i] == str2[j], then move to next character for both the strings.
+
 
 ```java
 public class App {
