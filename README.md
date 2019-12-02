@@ -8,6 +8,7 @@ A subsequence is a sequence that can be derived from another sequence by deletin
 
 ##### Base case
 If any one of the string is empty then longest common subsequence will be of length 0.
+
 e.g. "" and "abc" the longest common substring will be of length 0, because there is nothing common, between these two strings. 
 
 
