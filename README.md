@@ -5,7 +5,7 @@ A subsequence is a sequence that can be derived from another sequence by deletin
 ### Note : Subsequence doesn't need to be contiguous.
 
 ## Solution
-We can solve this problem either recursively or by using Dynamic Programming. The recursive approach solves the same subproblem everytime, we can improve the runtime by using the Dynamic Programming approach.
+We can solve this problem either recursively or by using Dynamic Programming. 
 
 #### Recursive Approach
 
@@ -17,13 +17,6 @@ e.g. "" and "abc" the longest common substring will be of length 0, because ther
 3. If str1[i] != str2[j], then try both the cases and return the one which results in longest common subsequence. 
 	1. Move to the next character in str1 
 	2. Move to the next character in str2
-
-
-```java
-1 + longestCommonSubsequence(text1.substring(1), text2.substring(1))
-```
-
-
 
 
 ```java
@@ -48,6 +41,8 @@ public class App {
 }
 
 ```
+
+The recursive approach solves the same subproblem everytime, we can improve the runtime by using the Dynamic Programming approach.
 
 ![When we can move to only right left](LCS-1.PNG?raw=true "Title")
 
