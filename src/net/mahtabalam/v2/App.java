@@ -1,10 +1,11 @@
 package net.mahtabalam.v2;
 
+import java.util.Arrays;
+
 public class App {
 	
 	public static void main(String[] args) {
-	   // System.out.println(longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd"));
-		System.out.println(longestCommonSubsequence("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "CCCDDEGDHAGKGLWAJWKJAWGKGWJAKLGGWAFWLFFWAGJWKAG"));
+		System.out.println(longestCommonSubsequence("abc", "cab"));
 	}
 
 	public static int longestCommonSubsequence(String text1, String text2) {
@@ -25,7 +26,9 @@ public class App {
 				}
 			}
 		}
-		
+		for(int[] r : dpTable) {
+			System.out.println(Arrays.toString(r));
+		}
 		System.out.println(subSequence(text1, text2, dpTable));
 		return dpTable[rows][columns];
 	}
