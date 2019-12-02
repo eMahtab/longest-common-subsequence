@@ -12,6 +12,29 @@ If any one of the string is empty then longest common subsequence will be of len
 e.g. "" and "abc" the longest common substring will be of length 0, because there is nothing common, between these two strings. 
 
 
+```java
+public class App {
+	
+	public static void main(String[] args) {
+		System.out.println(longestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd"));
+	}
+
+	public static int longestCommonSubsequence(String text1, String text2) {
+		if (text1.length() == 0 || text2.length() == 0) {
+			return 0;
+		}
+
+		if (text1.charAt(0) == text2.charAt(0)) {
+			return 1 + longestCommonSubsequence(text1.substring(1), text2.substring(1));
+		} else {
+			return Math.max(longestCommonSubsequence(text1.substring(1), text2),
+					        longestCommonSubsequence(text1, text2.substring(1)));
+		}
+   }
+}
+
+```
+
 ![When we can move to only right left](LCS-1.PNG?raw=true "Title")
 
 
