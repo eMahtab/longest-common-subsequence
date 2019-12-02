@@ -9,15 +9,20 @@ We can solve this problem either recursively or by using Dynamic Programming. Th
 
 #### Recursive Approach
 
-##### Base case
-If any one of the string is empty then longest common subsequence will be of length 0. 
+1. If any one of the string is empty then longest common subsequence will be of length 0. (Base case)
 e.g. "" and "abc" the longest common substring will be of length 0, because there is nothing common, between these two strings. 
+
+2. If str1[i] == str2[j], then move to next character for both the strings.
+
+3. If str1[i] != str2[j], then try both the cases, 
+	move to next character in str1 and 
+
 
 ```java
 1 + longestCommonSubsequence(text1.substring(1), text2.substring(1))
 ```
 
-If str1[i] == str2[j], then move to next character for both the strings.
+
 
 
 ```java
