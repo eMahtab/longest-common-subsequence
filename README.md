@@ -45,7 +45,13 @@ public class App {
 The recursive approach solves the same subproblem everytime, we can improve the runtime by using the Dynamic Programming approach.
 
 ### Dynamic Programming - Bottom Up (Tabulation) Approach
+For example lets find the longest common subsequence for strings, "abc" and "cab". 
+Approach: We start filling the dpTable, row by row, and we fill all the columns in a single row, before moving to next row. 
+By doing this we are solving the subproblems, which will help us, to get to the result of our actual problem.
 
+Now while filling the cell dpTable[i][j], there can be two cases
+1. str[i] == str[j], in this case dpTable[i][j] = dpTable[i-1][j-1]
+2. str[i] != str[j], in this case dpTable[i][j] = Math.max(dpTable[i-1][j], dpTable[i][j-1])
 ![When we can move to only right left](LCS-1.PNG?raw=true "Title")
 
 
