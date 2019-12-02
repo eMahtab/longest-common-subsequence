@@ -6,15 +6,14 @@ A subsequence is a sequence that can be derived from another sequence by deletin
 
 ### Approach
 
-##### Base case
-If any one of the string is empty then longest common subsequence will be of length 0.
-
-e.g. "" and "abc" the longest common substring will be of length 0, because there is nothing common, between these two strings. 
-
-
 #### Recursive
 
-If str1[i] == str2[j], then move to next character for both the strings, 1 + longestCommonSubsequence(text1.substring(1), text2.substring(1))
+##### Base case
+If any one of the string is empty then longest common subsequence will be of length 0. 
+e.g. "" and "abc" the longest common substring will be of length 0, because there is nothing common, between these two strings. 
+
+If str1[i] == str2[j], then move to next character for both the strings.
+1 + longestCommonSubsequence(text1.substring(1), text2.substring(1))
 
 ```java
 public class App {
