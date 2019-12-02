@@ -50,13 +50,14 @@ Approach: We start filling the dpTable, row by row, and we fill all the columns 
 By doing this we are solving the subproblems, which will help us, to get to the result of our actual problem.
 
 Now while filling the cell dpTable[i][j], there can be two cases
-1. str[i] == str[j], in this case dpTable[i][j] = dpTable[i-1][j-1] + 1
-2. str[i] != str[j], in this case dpTable[i][j] = Math.max(dpTable[i-1][j], dpTable[i][j-1])
+case 1. str1[i] == str2[j], in this case dpTable[i][j] = dpTable[i - 1][j - 1] + 1
+Case 2. str1[i] != str2[j], in this case dpTable[i][j] = Math.max(dpTable[i - 1][j], dpTable[i][j - 1])
 
+Case 1 : When str1[i] == str2[j]
 ![When we can move to only right left](LCS-1.PNG?raw=true "Title")
 
 
-
+Case 1 : When str1[i] != str2[j]
 ![When we can move to only right left](LCS-2.PNG?raw=true "Title")
 
 ```java
