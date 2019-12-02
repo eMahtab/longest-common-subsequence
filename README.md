@@ -28,7 +28,7 @@ public class App {
 			return 1 + longestCommonSubsequence(text1.substring(1), text2.substring(1));
 		} else {
 			return Math.max(longestCommonSubsequence(text1.substring(1), text2),
-					        longestCommonSubsequence(text1, text2.substring(1)));
+					longestCommonSubsequence(text1, text2.substring(1)));
 		}
    }
 }
