@@ -7,7 +7,7 @@ A subsequence is a sequence that can be derived from another sequence by deletin
 ## Solution
 We can solve this problem either recursively or by using Dynamic Programming. 
 
-#### Recursive Approach
+### Recursive Approach
 
 1. If any one of the string is empty then longest common subsequence will be of length 0. (Base case)
 e.g. "" and "abc" the longest common substring will be of length 0, because there is nothing common, between these two strings. 
@@ -43,6 +43,8 @@ public class App {
 ```
 
 The recursive approach solves the same subproblem everytime, we can improve the runtime by using the Dynamic Programming approach.
+
+### Dynamic Programming - Bottom Up (Tabulation) Approach
 
 ![When we can move to only right left](LCS-1.PNG?raw=true "Title")
 
