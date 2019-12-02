@@ -15,7 +15,8 @@ e.g. "" and "abc" the longest common substring will be of length 0, because ther
 2. If str1[i] == str2[j], then move to next character for both the strings.
 
 3. If str1[i] != str2[j], then try both the cases, 
-	move to next character in str1 and 
+	1. move to next character in str1 and 
+	2. move to next character in str1 and
 
 
 ```java
