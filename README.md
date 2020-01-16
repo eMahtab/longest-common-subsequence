@@ -118,3 +118,4 @@ public class App {
 
 }
 ```
+**Note the order of checks in the `subSequence()` method 💥 , for constructing the subsequence.**
