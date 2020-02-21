@@ -47,6 +47,8 @@ public class App {
 
 The recursive approach solves the same subproblem everytime, we can improve the runtime by using the Dynamic Programming approach.
 
+### Recursive implementation will result in Time Limit Exceeded error on Leetcode 😟 
+
 ### 2. Dynamic Programming - Bottom Up (Tabulation) Approach
 For example lets find the longest common subsequence for strings, "abc" and "cab". 
 
